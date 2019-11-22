@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Great+Vibes|Satisfy&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lora&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+    <body>
+       
+        <header class="header">
+            <img class="header__image" src="img/dance5.jpg" alt="header image">
+                <div class="text-block">
+                    <h2 class="text-block__title">Anna Smith</h2>
+                    <h4 class="text-block__subtitle">DANCE ARTIST</h4>
+                </div>
+      
+         <!--Navbar-->
+         <div class="cont">
+         <nav>
+                 <a class="cont__item" href="#">Home</a><!--
+                 --><a class="cont__item" href="#">News</a><!--
+                --><a class="cont__item" href="#">Repertoire</a><!--
+                 --><a class="cont__item" href="#">Reviews</a><!--
+                --><a class="cont__item" href="#">Contact</a>
+            </nav>
+            </div>
+        </header>
+
+        <!--Main content-->
+
+        <div class="container">
+            <div class="container__column--left">
+                <p class="paragraf__heading">
+                        Photo galery update
+                <br>
+                </p>
+                <p class="paragraf__date">
+                        8th September 2019
+                </p>
+                <br>
+                <p class="paragraf__content">
+                            Check it out!
+                </p>  
+                <a href="https://www.instagram.com" class="container__column--left__media-img">
+                    <img src="img/media.jpg" alt="media-img">
+                </a>
+            </div>
+
+            <div class="container__column--middle">
+                <p class="paragraf__heading">
+                    New Article in New York Times
+                <br>
+                </p>
+                <p class="paragraf__date">
+                    14th September 2019
+                </p>
+                <br>
+                <p class="paragraf__content">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Duis sit amet arcu semper, volutpat ligula in, ullamcorper quam. 
+                Nullam congue, libero eu ultricies auctor, sem lacus lobortis nulla, 
+                in accumsan justo metus a erat. Mauris luctus finibus commodo. 
+                <span id="dots"></span><span id="more">
+                Pellentesque pellentesque viverra turpis, sit amet feugiat est. 
+                Cras congue ultricies lacinia. Fusce quis mi quis mauris vehicula pretium. 
+                Duis pulvinar mollis pretium.
+                </span></p>  
+                
+                <button onclick="readMore()" id="myBtn" class="btn">Read more</button>
+            </div>
+
+            <div class="container__column--right">
+                <p class="paragraf__heading">
+                    Calendar
+                <br>
+                </p>
+                <p class="paragraf__date">
+                    
+                </p>
+                <br>
+                <p class="paragraf__content">
+                </p>  
+            </div>
+            <div class="container__row--bottom-middle">
+                    <p class="paragraf__heading">
+                            Last Revievs
+                        <br>
+                        </p>
+                        <p class="paragraf__date">
+                            28th September 2019
+                        </p>
+                        <br>
+                        <p class="paragraf__content">
+                                Lorem ipsum dolor sit amet, 
+                                consectetur adipiscing elit.
+                                Duis sit amet arcu semper, 
+                                volutpat ligula in, 
+                                ullamcorper quam. Nullam congue, 
+                                libero eu ultricies auctor, 
+                                sem lacus lobortis nulla, 
+                                in accumsan justo metus a erat.
+                                Mauris luctus finibus commodo. 
+                                Pellentesque pellentesque viverra 
+                                turpis, sit amet feugiat est. 
+                                Cras congue ultricies lacinia. 
+                                Fusce quis mi quis mauris vehicula 
+                                pretium. Duis pulvinar mollis pretium.
+                                <br>
+                                <br>
+                                Lorem ipsum dolor sit amet, 
+                                consectetur adipiscing elit.
+                                Duis sit amet arcu semper, 
+                                volutpat ligula in, 
+                                ullamcorper quam. Nullam congue, 
+                                libero eu ultricies auctor, 
+                                sem lacus lobortis nulla, 
+                                in accumsan justo metus a erat.
+                                Mauris luctus finibus commodo. 
+                                Pellentesque pellentesque viverra 
+                                turpis, sit amet feugiat est. 
+                                Cras congue ultricies lacinia. 
+                                Fusce quis mi quis mauris vehicula 
+                                pretium. Duis pulvinar mollis pretium.
+                        </p>  
+            </div>
+            <div class="container__row--bottom-rep">
+                    <p class="paragraf__heading">
+                            Repertoire
+                        <br>
+                        </p>
+                        <p class="paragraf__date">
+                          Recent
+                        </p>
+                        <br>
+                        <p class="paragraf__content">
+                                • La Bayadere
+                                Gamzatti / a Shade / the Lead D’Jampe  • Firebird<br>
+                                The Firebird   • The Sleeping Beauty<br>
+                                Princess Florine • The Bright Stream<br>
+                                Milkmaid • Duo Concertant<br>
+                                Principal Role • Le Corsaire<br>
+                                Gulnare and an Odalisque • Don Quixote<br>
+                                Kitri / Mercedes / Driad Queen / the lead gypsy and a flower girl • Giselle<br>
+                                Giselle / Zulma and the peasant pas de deux • Romeo and Juliet<br>
+                                Juliet / Lead Harlot • The Sleeping Beauty<br>
+                                Fairy of Valor • Swan Lake<br>
+                                Odette-Odile / Pas De Trois / Hungarian Princessa / Cygnet • The Tchaikovsky Pas De Deux
+                        </p>  
+            </div>
+            <div class="container__row--bottom-media">
+                    <p class="paragraf__heading">
+                            Media
+                        <br>
+                        </p>
+                        <p class="paragraf__date">
+                            Find out more
+                        </p>
+                        <div class="fab">
+                            <link class="fab" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"  type='text/css'>
+                            <i target="_blank" class="fa fa-youtube" href="https://www.youtube.com"></i>
+                            <i target="_blank" class="fa fa-instagram" href="https://www.instagram.com"></i>
+                            <i target="_blank" class="fa fa-facebook-square" href="https://www.facebook.com"></i>
+                            <i target="_blank" class="fa fa-twitter" href="https://www.twitter.com"></i>
+                            <i target="_blank" class="fa fa-music" href="https://www.vimeo.com"></i>
+                            <i target="_blank" class="fa fa-spotify" href="https://www.spotify.com"></i>
+                        </div>
+                        <br>
+                        <p class="paragraf__content">
+                        </p>  
+            </div>
+                 <div class="container__row--bottom">
+                
+                            <p class="container__contact-text">
+                                Lorem ipsum dolor sit amet, 
+                                consectetur adipiscing elit. 
+                                Duis sit amet arcu semper, 
+                                volutpat ligula in, ullamcorper quam. 
+                                <br>
+                                <br>
+                                For management, business related matters or media inquiries, 
+                                please contact:
+                                <br>  
+                                <br>  
+                                <b>SANK MEDIA & MANAGEMENT, INC.</b>
+                            </p><br>
+                    <form class="container__contact-form">
+                            <label for="message"></label>
+                            <textarea rows="6" id="message" placeholder="Enter your message here"></textarea><br>
+                            <label for="first-name">First Name</label>
+                            <input type="text" id="first-name" placeholder="Enter your first name here"><br>
+                            <label for="last-name">Last Name</label>
+                            <input type="text" id="last-name" placeholder="Enter your last name here"><br>
+                            <label for="email">Email</label>
+                            <input type="email" id="email" placeholder="Enter your email here"><br>
+                           
+                        
+                            <button class="btn" type="submit">Submit</button>
+                  
+                    </form>  
+
+
+            </div>
+        </div>
+        <footer>
+        
+            <div class="legal">
+                &copy 2019 by JG. All rights reserved.
+            </div>
+
+        </footer>
+
+        <script>
+            function readMore() {
+                var dots = document.getElementById("dots");
+                var moreText = document.getElementById("more");
+                var btnText = document.getElementById("myBtn");
+              
+                if(dots.style.display === "none") {
+                    dots.style.display = 'inline';
+                    btnText.innerHTML = "Read more";
+                    moreText.style.display = "none";
+                } else {
+                    dots.style.display = 'none';
+                    btnText.innerHTML = "Read less";
+                    moreText.style.display = "inline";
+                }
+            }
+
+        </script>
+    </body>
+</head>   
+</html>

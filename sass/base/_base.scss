@@ -1,0 +1,137 @@
+* {
+    margin: 0; 
+    padding: 0;
+    box-sizing: 0;
+}
+
+body {
+    font-family: $font-main;
+}
+
+::selection {
+    background-color: $color-main-light;
+    color: white;
+}
+
+.header {
+   text-align: center;
+
+   &__image {
+    width: auto;
+    height: auto;
+    position: relative;
+    background-size: cover;
+    background-position: top;
+
+    @include respond(phone) {
+        padding: 0;
+        background-position: center;
+        background-position: top;
+        max-width: 100%;
+        background-size: cover;
+        display: flex;
+
+        }
+   }
+}
+//text on the background img
+.text-block {
+    position: absolute;
+    color: $color2;
+    background-color: rgba($color2, 0.2);
+    top: 10%;
+    left: 50%;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    transform: translate(-50%, -50%);
+    border-style: solid;
+    border-width: 1.5px;
+    padding: 10px;
+    letter-spacing: 7px;
+    font-weight: bold;
+    cursor: pointer;
+
+    @include respond(phone) {
+        background-color: rgba($color-main-light, 0.3);
+        padding-top: 10px;
+   
+        
+    }
+
+
+    &__title {
+        font-family: 'Satisfy', cursive;
+        font-family: 'Great Vibes', cursive;
+        font-size: 3.8em;
+    }
+    @include respond(phone) {
+        display: block;
+        font-size: 1em;
+        text-align: center;
+        color: black;
+        font-weight: bold;
+
+    &__subtitle {
+            display: block;
+            font-size: 2em;  
+
+    }
+    @include respond(phone) {
+        display: block;
+        font-size: .5em;
+        text-align: center;
+        color: black;
+        font-weight: bold;
+        
+    }
+}
+}
+
+//main content - text adjustment
+.paragraf__heading {
+    font-size: 1.5em;
+    font-weight: bold;
+
+}
+
+.paragraf__date {
+    font-style: italic;
+}
+.paragraf__content {
+    text-align: justify;
+}
+
+.form {
+    position: absolute;
+
+}
+
+//read-more button
+#more {
+    display: none;
+}
+
+.btn {
+    font-family: inherit;
+    cursor: pointer;
+    padding: 1%;
+    margin: 1%;
+    border-radius: 10%;
+    font-weight: bold;
+}
+
+
+//Social media icons
+
+.fab {
+
+    font-size: 3.8em;
+    color: $color-main-dark;
+    padding: 1em;
+    cursor: pointer;
+
+  }
+
+

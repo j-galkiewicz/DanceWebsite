@@ -1,0 +1,132 @@
+//container for flexboxes
+.container {
+    display: flex;
+    max-width: 70%;
+    max-height: 30%;
+    margin: 2px auto;
+    padding: 2px;
+    line-height: 2;
+    align-content: space-evenly; 
+    flex-direction: row;
+    flex-flow: row wrap;
+
+    @include respond(phone) {
+        flex-direction: column;
+    }
+
+
+//Left column
+&__column--left {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    flex: 20%;
+    background-color: rgba($color-main-dark, 0.2);
+
+}
+    &__column--left__media-img {
+        filter: grayscale(100%);
+        cursor: pointer;
+        margin: 0.4em;
+        padding: 0.4em;
+        max-width: 100%;
+        background-size: contain;
+        position: relative;
+        align-items: center;
+        border-bottom: 2px solid $color2;
+  
+
+    @include respond(phone) {  
+        align-items: center;
+        background-size: contain;
+
+    }
+
+}
+//Middle column 
+ &__column--middle {
+        -webkit-flex: 2;
+        -ms-flex: 2;
+        flex: 2;
+        flex: 20%;
+        background-color: rgba($color-main-dark, 0.2);
+
+    
+    }
+//Right column
+&__column--right{
+        -webkit-flex: 3;
+        -ms-flex: 3;
+        flex: 3;
+        flex: 20%;
+        background-color: rgba($color-main-dark, 0.2);
+       
+
+}
+
+&__row--bottom-middle {
+    -webkit-flex: 4;
+    -ms-flex: 4;
+    flex: 4;
+    flex: 100%;
+    flex-flow: row wrap;
+    background-color: rgba($color-main-dark, 0.2);
+    
+}
+
+&__row--bottom-rep {
+    -webkit-flex: 5;
+    -ms-flex: 5;
+    flex: 5;
+    flex: 100%;
+    background-color: rgba($color-main-dark, 0.2);
+   
+}
+//Social media 
+&__row--bottom-media {
+    
+    -webkit-flex: 6;
+    -ms-flex: 6;
+    flex-basis: 50%;
+    flex: 6;
+    background-color: rgba($color-main-dark, 0.2);
+    
+}
+//Contact form
+&__row--bottom {
+    -webkit-flex: 7;
+    -ms-flex: 7;
+    flex: 7;
+    flex: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba($color-main-dark, 0.2);
+   
+}
+
+
+&__contact-form {
+    width: 100%;
+    padding: 18px 26px;
+    margin: 15px 0px;
+    box-sizing: border-box;
+    border: 1px solid $color2;
+    background-color: $color2;
+
+
+}
+
+
+}
+.container > div {
+    margin: .5%;
+    padding: 2.5%;
+}
+
+
+
+
+
+
+

@@ -1,0 +1,43 @@
+.cont {
+    position: inline-block;
+    top: 87%;
+    left: 37%;
+    list-style-type: none;
+    font-family: $font-main;
+    white-space: nowrap;
+    text-align: center;
+    overflow: hidden;
+
+    &__item {
+       
+        display: inline-flex;
+        padding: 12px 18px;
+        text-decoration: none;
+        background-color: $color-main-dark;
+        font-size: 1.2em;
+        color: $color2;
+        font-weight: bold;
+        text-transform: uppercase;
+        text-align: center;
+        cursor: pointer;
+
+        @include respond(phone) {
+            display: block;
+            text-align: center;
+            background-color: $color-main-light;
+            font-size: 1em;
+            padding: 8px 14px;
+            width: 100%;
+            overflow: auto;
+            float: none;
+    }
+
+        &:hover{
+            border:none;
+            background:rgba(0, 0, 0, 0.2);
+            background: $color-main-light;
+
+               
+    }   
+}
+}
