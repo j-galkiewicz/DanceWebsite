@@ -12,9 +12,12 @@
 
     @include respond(phone) {
         flex-direction: column;
+        line-height: 1.5;
+        margin: 10px;
+        max-width: 800px;
+        display: block;
+
     }
-
-
 //Left column
 &__column--left {
     -webkit-flex: 1;
@@ -107,12 +110,21 @@
 
 
 &__contact-form {
-    width: 100%;
+    width: 90%;
     padding: 18px 26px;
     margin: 15px 0px;
     box-sizing: border-box;
     border: 1px solid $color2;
     background-color: $color2;
+    @include respond(phone) {
+
+        
+        display: inline;
+        padding: auto;
+        margin: auto;
+ 
+
+    }
 
 
 }
