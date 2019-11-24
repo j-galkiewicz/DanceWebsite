@@ -21,6 +21,7 @@
 
 //Submit button
 .btn-submit {
+    
     font-family: inherit;
     cursor: pointer;
     padding: 10px 25px;
@@ -30,7 +31,7 @@
     font-size: 0.8em;
     font-weight: bold;
     background-color: $color-grey-light;
-    
+
     &:hover {
         opacity: 0.6;
     }
