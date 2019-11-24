@@ -13,17 +13,22 @@
     }
 }
 #message {
-    font-size: 1em;
+ 
      background-color: #f5f5f5;
-     width: 80%;
-     padding: 4%;
+     width: 100%;
      font-family: $font-main;
 }
 #first-name, 
-#last-name,
+#last-name {
+    border: none;
+    width: 100%;
+    background-color: #f5f5f5; 
+}
+
+
 #email {
     border: none;
-    width: 50%;
+    width: 100%;
     background-color: #f5f5f5; 
 }
 
