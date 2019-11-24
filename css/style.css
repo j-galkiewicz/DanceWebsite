@@ -11,10 +11,11 @@ body, html {
   background-color: #d1e6e9; }
 
 .fa {
-  font-size: 1.4em !important;
+  font-size: 1.2em !important;
   color: #6d6d6d;
   padding: 1em;
   text-decoration: none;
+  align-content: center;
   cursor: pointer; }
 
 .btn {
@@ -209,14 +210,14 @@ body, html {
   .container__row--bottom-media {
     -webkit-flex: 6;
     -ms-flex: 6;
-    flex-basis: 35%;
+    flex-basis: 20%;
     flex: 6;
     background-color: rgba(109, 109, 109, 0.2); }
   .container__row--bottom {
     -webkit-flex: 7;
     -ms-flex: 7;
     flex: 7;
-    flex: 50%;
+    flex: 70%;
     display: flex;
     align-items: center;
     justify-content: center;
