@@ -218,6 +218,7 @@ body, html {
     -ms-flex: 7;
     flex: 7;
     flex: 70%;
+    height: auto;
     display: flex;
     align-items: center;
     justify-content: center;
