@@ -1,0 +1,30 @@
+//CONTACT FORM
+
+.container__contact-form {
+    width: 80%;
+    padding: 6% 8%;
+    margin: 5% 1%;
+    background-color: $color2;
+
+    @include respond(phone) {
+        display: inline;
+        padding: auto;
+        margin: auto;
+    }
+}
+#message {
+    font-size: 1em;
+     background-color: #f5f5f5;
+     width: 80%;
+     padding: 4%;
+     font-family: $font-main;
+}
+#first-name, 
+#last-name,
+#email {
+    border: none;
+    width: 50%;
+    background-color: #f5f5f5; 
+}
+
+

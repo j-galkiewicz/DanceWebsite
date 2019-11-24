@@ -1,0 +1,25 @@
+//main content - text adjustment
+.paragraf__heading {
+    font-size: 1.5em;
+    font-weight: bold;
+
+    &__date {
+        font-style: italic;
+
+    &__content {
+        text-align: justify;
+    }
+}
+}
+
+
+//Social media icons
+
+.fa {
+    font-size: 4rem;
+    color: $color-main-dark;
+    padding: 1em;
+    text-decoration: none;
+    cursor: pointer;
+  }
+

@@ -24,13 +24,14 @@
 
         @include respond(phone) {
             display: block;
-            align-items: center;
+            text-align: center;
             background-color: $color-main-light;
             font-size: 1em;
             padding: auto;
             width: 100%;
             overflow: auto;
             float: none;
+        
     }
 
         &:hover{

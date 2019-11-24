@@ -1,7 +1,6 @@
 * {
   margin: 0;
-  padding: 0;
-  box-sizing: 0; }
+  padding: 0; }
 
 body {
   font-family: "Montserrat", sans-serif; }
@@ -10,83 +9,20 @@ body {
   background-color: #909090;
   color: white; }
 
-.header {
-  text-align: center; }
-  .header__image {
-    width: auto;
-    height: auto;
-    position: relative;
-    background-size: cover;
-    background-position: top; }
-    @media only screen and (max-width: 47.5em) {
-      .header__image {
-        padding: 0;
-        background-position: center;
-        background-position: top;
-        max-width: 100%;
-        background-size: cover;
-        display: flex; } }
-
-.text-block {
-  position: absolute;
-  color: #d1e6e9;
-  background-color: rgba(209, 230, 233, 0.2);
-  top: 10%;
-  left: 50%;
-  margin-block-start: 0.67em;
-  margin-block-end: 0.67em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  transform: translate(-50%, -50%);
-  border-style: solid;
-  border-width: 1.5px;
-  padding: 10px;
-  letter-spacing: 7px;
-  font-weight: bold;
-  cursor: pointer; }
-  @media only screen and (max-width: 47.5em) {
-    .text-block {
-      background-color: rgba(144, 144, 144, 0.5);
-      padding: 55%;
-      width: 100%;
-      border-style: none; } }
-  .text-block__title {
-    font-family: 'Satisfy', cursive;
-    font-family: 'Great Vibes', cursive;
-    font-size: 3.8em; }
-  @media only screen and (max-width: 47.5em) {
-    .text-block {
-      display: block;
-      font-size: 1em;
-      text-align: center;
-      color: black;
-      font-weight: bold; }
-      .text-block__subtitle {
-        display: block;
-        font-size: 2em; } }
-  @media only screen and (max-width: 47.5em) and (max-width: 47.5em) {
-    .text-block {
-      display: block;
-      font-size: .5em;
-      text-align: center;
-      color: black;
-      font-weight: bold; } }
-
 .paragraf__heading {
   font-size: 1.5em;
   font-weight: bold; }
+  .paragraf__heading__date {
+    font-style: italic; }
+    .paragraf__heading__date__content {
+      text-align: justify; }
 
-.paragraf__date {
-  font-style: italic; }
-
-.paragraf__content {
-  text-align: justify; }
-
-.form {
-  position: absolute; }
-
-#more {
-  display: none; }
+.fa {
+  font-size: 4rem;
+  color: #6d6d6d;
+  padding: 1em;
+  text-decoration: none;
+  cursor: pointer; }
 
 .btn {
   font-family: inherit;
@@ -96,40 +32,81 @@ body {
   border-radius: 10%;
   font-weight: bold; }
 
-.fab {
-  font-size: 3.8em;
-  color: #6d6d6d;
-  padding: 1em;
-  cursor: pointer; }
+#more {
+  display: none; }
 
-.container__contact-form {
-  width: 80%;
-  padding: 6% 8%;
-  margin: 5% 1%;
-  background-color: #d1e6e9; }
-  @media only screen and (max-width: 47.5em) {
-    .container__contact-form {
-      display: inline;
-      padding: auto;
-      margin: auto; } }
-
-#message {
-  font-size: 1em;
-  background-color: #f5f5f5;
-  width: 80%;
-  padding: 4%;
-  font-family: "Montserrat", sans-serif; }
-
-#first-name,
-#last-name,
-#email {
-  border: none;
-  width: 50%;
-  background-color: #f5f5f5; }
+.header {
+  text-align: center; }
+  .header__image {
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat; }
+    @media only screen and (max-width: 47.5em) {
+      .header__image {
+        padding: 0;
+        background-position: center;
+        background-position: top;
+        width: 100%;
+        background-size: cover;
+        display: flex;
+        opacity: 0.9; } }
+    @media only screen and (max-width: 56.25em) {
+      .header__image {
+        align-items: center;
+        align-content: space-evenly;
+        max-width: 100%;
+        margin: auto;
+        justify-content: center; } }
+  .header__text-block {
+    position: absolute;
+    color: #d1e6e9;
+    background-color: rgba(209, 230, 233, 0.2);
+    top: 10%;
+    left: 50%;
+    margin-block-start: 1.3em;
+    margin-block-end: 1.3em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    transform: translate(-50%, -50%);
+    border-style: solid;
+    border-width: 1.5px;
+    padding: 30px;
+    letter-spacing: 8px;
+    font-weight: bold;
+    font-size: 1.8em;
+    cursor: pointer; }
+    @media only screen and (max-width: 47.5em) {
+      .header__text-block {
+        background-color: rgba(209, 230, 233, 0.5);
+        padding: 1.8%;
+        width: auto;
+        margin: auto;
+        border-style: none;
+        top: 18%;
+        left: 50%;
+        display: block;
+        font-size: 1.1em;
+        text-align: center;
+        color: black;
+        font-weight: bold; } }
+    .header__text-block__subtitle {
+      display: block;
+      font-size: 1.5em; }
+      @media only screen and (max-width: 47.5em) {
+        .header__text-block__subtitle {
+          display: block;
+          font-size: .5em;
+          text-align: center;
+          color: black;
+          font-weight: bold; } }
 
 .container {
   display: flex;
-  max-width: 70%;
+  max-width: 65%;
   max-height: 30%;
   margin: 2px auto;
   padding: 2px;
@@ -140,10 +117,19 @@ body {
   @media only screen and (max-width: 47.5em) {
     .container {
       flex-direction: column;
-      line-height: 1.5;
+      line-height: 1.2;
       margin: 5%;
-      max-width: 800px;
+      max-width: 90%;
       display: block; } }
+  @media only screen and (max-width: 56.25em) {
+    .container {
+      max-width: 1400px;
+      margin: auto; } }
+  @media only screen and (max-width: 75em) {
+    .container {
+      max-width: 1200px;
+      margin: 5%;
+      padding: auto; } }
   .container__column--left {
     -webkit-flex: 1;
     -ms-flex: 1;
@@ -239,7 +225,7 @@ body {
     @media only screen and (max-width: 47.5em) {
       .cont__item {
         display: block;
-        align-items: center;
+        text-align: center;
         background-color: #909090;
         font-size: 1em;
         padding: auto;
@@ -250,5 +236,30 @@ body {
       border: none;
       background: rgba(0, 0, 0, 0.2);
       background: #909090; }
+
+.container__contact-form {
+  width: 80%;
+  padding: 6% 8%;
+  margin: 5% 1%;
+  background-color: #d1e6e9; }
+  @media only screen and (max-width: 47.5em) {
+    .container__contact-form {
+      display: inline;
+      padding: auto;
+      margin: auto; } }
+
+#message {
+  font-size: 1em;
+  background-color: #f5f5f5;
+  width: 80%;
+  padding: 4%;
+  font-family: "Montserrat", sans-serif; }
+
+#first-name,
+#last-name,
+#email {
+  border: none;
+  width: 50%;
+  background-color: #f5f5f5; }
 
 /*# sourceMappingURL=style.css.map */

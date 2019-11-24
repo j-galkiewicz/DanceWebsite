@@ -1,7 +1,7 @@
 //container for flexboxes
 .container {
     display: flex;
-    max-width: 70%;
+    max-width: 65%;
     max-height: 30%;
     margin: 2px auto;
     padding: 2px;
@@ -12,12 +12,25 @@
 
     @include respond(phone) {
         flex-direction: column;
-        line-height: 1.5;
+        line-height: 1.2;
         margin: 5%;
-        max-width: 800px;
+        max-width: 90%;
         display: block;
-
     }
+        @include respond(tab-port) {
+		max-width: 1400px;
+        margin: auto;
+  
+        }
+        @include respond(tab-land) {
+            max-width: 1200px;
+            margin: 5%;
+            padding: auto;
+    
+            }
+
+
+    
 //Left column
 &__column--left {
     -webkit-flex: 1;
@@ -106,19 +119,14 @@
     justify-content: center;
     flex-direction: column;
     background-color: rgba($color-main-dark, 0.2);
-   
     
     @include respond(phone) {  
- 
         padding: auto;
         margin: auto;
         flex-direction: column;
  
     }
-  
 }
-
-
 }
 .container > div {
     margin: .6%;

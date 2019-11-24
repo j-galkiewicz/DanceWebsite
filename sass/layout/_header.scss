@@ -1,0 +1,87 @@
+//HEADER
+
+.header {
+    text-align: center;
+
+    &__image {
+     width: auto;
+     height: auto;
+     margin: 0 auto;
+     position: relative;
+     background-size: cover;
+     background-position: top;
+     background-repeat: no-repeat;
+    
+     @include respond(phone) {
+         padding: 0;
+         background-position: center;
+         background-position: top;
+         width: 100%;
+         background-size: cover;
+         display: flex;
+         opacity: 0.9;
+ 
+         }
+         @include respond(tab-port) {
+            align-items: center;
+            align-content: space-evenly; 
+            max-width: 100%;
+            margin: auto;
+            justify-content: center; 
+   
+        }
+        }
+ //text on the background img
+ &__text-block {
+     position: absolute;
+     color: $color2;
+     background-color: rgba($color2, 0.2);
+     top: 10%;
+     left: 50%;
+     margin-block-start:1.3em;
+     margin-block-end: 1.3em;
+     margin-inline-start: 0px;
+     margin-inline-end: 0px;
+     transform: translate(-50%, -50%);
+     border-style: solid;
+     border-width: 1.5px;
+     padding: 30px;
+     letter-spacing: 8px;
+     font-weight: bold;
+     font-size: 1.8em;
+     cursor: pointer;
+ 
+     @include respond(phone) {
+         background-color: rgba($color2, 0.5);
+         padding: 1.8%;
+         width: auto;
+         margin: auto;
+         border-style: none;
+         top: 18%;
+         left: 50%;
+         display: block;
+         font-size: 1.1em;
+         text-align: center;
+         color: black;
+         font-weight: bold;
+ 
+     }
+ 
+
+     &__subtitle {
+             display: block;
+             font-size: 1.5em;  
+ 
+     
+     @include respond(phone) {
+         display: block;
+         font-size: .5em;
+         text-align: center;
+         color: black;
+         font-weight: bold;
+         
+     }
+ }
+ }
+ }
+
