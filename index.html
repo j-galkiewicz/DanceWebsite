@@ -2,7 +2,7 @@
 <html>
 <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1,  maximum-scale=1.0, user-scalable=no">
         <link href="https://fonts.googleapis.com/css?family=Great+Vibes|Satisfy&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Lora&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Montserrat:300&display=swap" rel="stylesheet">
@@ -32,15 +32,15 @@
 
         <div class="container">
             <div class="container__column--left">
-                <p class="paragraf__heading">
+                <p class="container__paragraf__heading">
                         Photo galery update
                 <br>
                 </p>
-                <p class="paragraf__date">
+                <p class="container__paragraf__date">
                         8th September 2019
                 </p>
                 <br>
-                <p class="paragraf__content">
+                <p class="container__paragraf__content">
                             Check it out!
                 </p>  
                 <a href="https://www.instagram.com" class="container__column--left__media-img">
@@ -49,15 +49,15 @@
             </div>
 
             <div class="container__column--middle">
-                <p class="paragraf__heading">
+                <p class="container__paragraf__heading">
                     New Article in New York Times
                 <br>
                 </p>
-                <p class="paragraf__date">
+                <p class="container__paragraf__date">
                     14th September 2019
                 </p>
                 <br>
-                <p class="paragraf__content">
+                <p class="container__paragraf__content">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                 Duis sit amet arcu semper, volutpat ligula in, ullamcorper quam. 
                 Nullam congue, libero eu ultricies auctor, sem lacus lobortis nulla, 
@@ -72,27 +72,36 @@
             </div>
 
             <div class="container__column--right">
-                <p class="paragraf__heading">
+                <p class="container__paragraf__heading">
                     Calendar
                 <br>
                 </p>
-                <p class="paragraf__date">
-                    
+                <p class="container__paragraf__date">
+                    Upcoming events
                 </p>
                 <br>
-                <p class="paragraf__content">
+                <p class="container__paragraf__content">
+                   <p class="container__paragraf__content">	&#10095; 15/12/19 <b>The Nutcracker</b>
+                    Segerstrom Center for the Arts, Costa Mesa, California</p>
+                    <button class="btn">Buy a ticket</button>
+                   <br>
+                   <br>
+                   <p class="container__paragraf__content">	&#10095; 20/12/19 <b>Giselle</b> 
+                    John F. Kennedy Center for the Performing Arts, Washington DC</p>
                 </p>  
+               
+                <button class="btn">Buy a ticket</button>
             </div>
             <div class="container__row--bottom-middle">
-                    <p class="paragraf__heading">
+                    <p class="container__paragraf__heading">
                             Last Revievs
                         <br>
                         </p>
-                        <p class="paragraf__date">
+                        <p class="container__paragraf__date">
                             28th September 2019
                         </p>
                         <br>
-                        <p class="paragraf__content">
+                        <p class="container__paragraf__content">
                                 Lorem ipsum dolor sit amet, 
                                 consectetur adipiscing elit.
                                 Duis sit amet arcu semper, 
@@ -126,16 +135,16 @@
                         </p>  
             </div>
             <div class="container__row--bottom-rep">
-                    <p class="paragraf__heading">
+                    <p class="container__paragraf__heading">
                             Repertoire
                         <br>
                         </p>
-                        <p class="paragraf__date">
+                        <p class="container__paragraf__date">
                           Recent
                         </p>
-                        <br>
-                        <p class="paragraf__content">
-                                • La Bayadere
+            
+                        <p class="container__paragraf__content">
+                                La Bayadere
                                 Gamzatti / a Shade / the Lead D’Jampe  • Firebird<br>
                                 The Firebird   • The Sleeping Beauty<br>
                                 Princess Florine • The Bright Stream<br>
@@ -144,17 +153,15 @@
                                 Gulnare and an Odalisque • Don Quixote<br>
                                 Kitri / Mercedes / Driad Queen / the lead gypsy and a flower girl • Giselle<br>
                                 Giselle / Zulma and the peasant pas de deux • Romeo and Juliet<br>
-                                Juliet / Lead Harlot • The Sleeping Beauty<br>
-                                Fairy of Valor • Swan Lake<br>
-                                Odette-Odile / Pas De Trois / Hungarian Princessa / Cygnet • The Tchaikovsky Pas De Deux
+                                
                         </p>  
             </div>
             <div class="container__row--bottom-media">
-                    <p class="paragraf__heading">
+                    <p class="container__paragraf__heading">
                             Media
                         <br>
                         </p>
-                        <p class="paragraf__date">
+                        <p class="container__paragraf__date">
                             Find out more
                         </p>
                         <div class="fa">
@@ -168,7 +175,7 @@
                         </div>
             </div>
                  <div class="container__row--bottom">
-                    <p class="paragraf__heading">
+                    <p class="container__paragraf__heading">
                         Contact
                     </p>
                       
@@ -181,23 +188,21 @@
                             <input type="text" id="last-name"><br>
                             <label for="email">Email</label>
                             <input type="email" id="email"><br>
-                           
+                            <br>
                         
                             <button class="btn" type="submit">Submit</button>
-                  
                     </form>  
-
-
             </div>
         </div>
+
+        <!--Footer-->
         <footer>
-        
             <div class="legal">
                 &copy 2019 by JG. All rights reserved.
             </div>
-
         </footer>
 
+        <!--Read more JS script-->
         <script>
             function readMore() {
                 var dots = document.getElementById("dots");
@@ -214,7 +219,6 @@
                     moreText.style.display = "inline";
                 }
             }
-
         </script>
     </body>
 </head>   

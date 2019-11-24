@@ -14,29 +14,30 @@
     
      @include respond(phone) {
          padding: 0;
+         margin: 0 auto;
          background-position: center;
          background-position: top;
          width: 100%;
          background-size: cover;
          display: flex;
          opacity: 0.9;
- 
          }
+
          @include respond(tab-port) {
             align-items: center;
             align-content: space-evenly; 
-            max-width: 100%;
-            margin: auto;
+            width: 100%;
+            margin: 0;
             justify-content: center; 
-   
         }
-        }
+     }
+
  //text on the background img
  &__text-block {
      position: absolute;
      color: $color2;
      background-color: rgba($color2, 0.2);
-     top: 10%;
+     top: 2%;
      left: 50%;
      margin-block-start:1.3em;
      margin-block-end: 1.3em;
@@ -51,22 +52,32 @@
      font-size: 1.8em;
      cursor: pointer;
  
-     @include respond(phone) {
-         background-color: rgba($color2, 0.5);
-         padding: 1.8%;
-         width: auto;
-         margin: auto;
-         border-style: none;
-         top: 18%;
-         left: 50%;
-         display: block;
-         font-size: 1.1em;
-         text-align: center;
-         color: black;
-         font-weight: bold;
- 
-     }
- 
+     @include respond(tab-port) {
+		max-width: 1400px;
+        margin: auto;
+        font-size: 1.5em;
+  
+        }
+        @include respond(tab-land) {
+            max-width: 1200px;
+            margin: auto;
+            padding: auto;
+            }
+    
+            @include respond(phone) {
+                padding: 1.5%;
+                width: 100%;
+                margin: auto;
+                border-style: none;
+                top: 1%;
+                left: 50%;
+                display: block;
+                font-size: .9em;
+                text-align: center;
+                font-weight: bold;
+                outline: none;
+                background-color: transparent;
+            }
 
      &__subtitle {
              display: block;

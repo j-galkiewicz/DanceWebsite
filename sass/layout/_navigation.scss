@@ -1,16 +1,15 @@
+//NAVIGATION MENU
+
 .cont {
     display: flexbox;
     position: inline-block;
-    top: 87%;
-    left: 37%;
     list-style-type: none;
     font-family: $font-main;
-    white-space: nowrap;
+    white-space: inherit;
     text-align: center;
     overflow: hidden;
 
     &__item {
-       
         display: inline-flex;
         padding: 12px 18px;
         text-decoration: none;
@@ -27,19 +26,17 @@
             text-align: center;
             background-color: $color-main-light;
             font-size: 1em;
-            padding: auto;
             width: 100%;
             overflow: auto;
             float: none;
-        
-    }
+            border: 0.1px solid $color2;
+        }
 
         &:hover{
             border:none;
             background:rgba(0, 0, 0, 0.2);
             background: $color-main-light;
-
-               
-    }   
-}
+  
+        }   
+    }
 }

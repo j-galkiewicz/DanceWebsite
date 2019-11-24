@@ -1,17 +1,20 @@
+
 * {
     margin: 0; 
     padding: 0;
- 
 }
 
-body {
+body, html {
     font-family: $font-main;
+    overflow-x: hidden;
+    position: relative;
 }
 
+//Text higlight
 ::selection {
-    background-color: $color-main-light;
-    color: white;
+    background-color: $color2;
 }
+
 
 
 

@@ -1,4 +1,5 @@
-//container for flexboxes
+//FLEXBOX CONTAINER
+
 .container {
     display: flex;
     max-width: 65%;
@@ -29,8 +30,25 @@
     
             }
 
+//Main content - text adjustment
 
-    
+&__paragraf__heading {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+    &__paragraf__date {
+        font-style: italic;
+    }    
+    &__paragraf__content {
+        text-align: justify;
+        
+    @include respond(phone) {
+        line-height: 1.7;
+        margin: 1%;
+    }
+}
+
+
 //Left column
 &__column--left {
     -webkit-flex: 1;
@@ -41,7 +59,6 @@
 
 }
     &__column--left__media-img {
-        filter: grayscale(100%);
         cursor: pointer;
         margin: 0.4em;
         padding: 0.4em;
@@ -50,12 +67,10 @@
         position: relative;
         align-items: center;
         border-bottom: 2px solid $color2;
-  
 
     @include respond(phone) {  
         align-items: center;
         background-size: contain;
-
     }
 
 }
@@ -66,9 +81,8 @@
         flex: 2;
         flex: 20%;
         background-color: rgba($color-main-dark, 0.2);
-
-    
     }
+
 //Right column
 &__column--right{
         -webkit-flex: 3;
@@ -76,10 +90,8 @@
         flex: 3;
         flex: 20%;
         background-color: rgba($color-main-dark, 0.2);
-       
-
 }
-
+//Bottom columns
 &__row--bottom-middle {
     -webkit-flex: 4;
     -ms-flex: 4;
@@ -87,7 +99,6 @@
     flex: 100%;
     flex-flow: row wrap;
     background-color: rgba($color-main-dark, 0.2);
-    
 }
 
 &__row--bottom-rep {
@@ -98,17 +109,17 @@
     background-color: rgba($color-main-dark, 0.2);
    
 }
-//Social media 
+
+//Social media column
 &__row--bottom-media {
-    
     -webkit-flex: 6;
     -ms-flex: 6;
     flex-basis: 50%;
     flex: 6;
-    background-color: rgba($color-main-dark, 0.2);
-    
+    background-color: rgba($color-main-dark, 0.2); 
 }
-//Contact form
+
+//Contact form column
 &__row--bottom {
     -webkit-flex: 7;
     -ms-flex: 7;
@@ -118,16 +129,16 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-color: rgba($color-main-dark, 0.2);
+    background-color: $color2;
     
     @include respond(phone) {  
         padding: auto;
         margin: auto;
         flex-direction: column;
- 
     }
 }
 }
+
 .container > div {
     margin: .6%;
     padding: 2.5%;

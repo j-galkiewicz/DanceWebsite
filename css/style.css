@@ -2,23 +2,16 @@
   margin: 0;
   padding: 0; }
 
-body {
-  font-family: "Montserrat", sans-serif; }
+body, html {
+  font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
+  position: relative; }
 
 ::selection {
-  background-color: #909090;
-  color: white; }
-
-.paragraf__heading {
-  font-size: 1.5em;
-  font-weight: bold; }
-  .paragraf__heading__date {
-    font-style: italic; }
-    .paragraf__heading__date__content {
-      text-align: justify; }
+  background-color: #d1e6e9; }
 
 .fa {
-  font-size: 4rem;
+  font-size: 1.4em !important;
   color: #6d6d6d;
   padding: 1em;
   text-decoration: none;
@@ -27,10 +20,14 @@ body {
 .btn {
   font-family: inherit;
   cursor: pointer;
-  padding: 1%;
-  margin: 1%;
-  border-radius: 10%;
-  font-weight: bold; }
+  padding: 10px 25px;
+  margin: 4px 2px;
+  border: none;
+  font-size: 0.8em;
+  font-weight: bold;
+  background-color: #6d6d6d4f; }
+  .btn:hover {
+    opacity: 0.6; }
 
 #more {
   display: none; }
@@ -48,6 +45,7 @@ body {
     @media only screen and (max-width: 47.5em) {
       .header__image {
         padding: 0;
+        margin: 0 auto;
         background-position: center;
         background-position: top;
         width: 100%;
@@ -58,14 +56,14 @@ body {
       .header__image {
         align-items: center;
         align-content: space-evenly;
-        max-width: 100%;
-        margin: auto;
+        width: 100%;
+        margin: 0;
         justify-content: center; } }
   .header__text-block {
     position: absolute;
     color: #d1e6e9;
     background-color: rgba(209, 230, 233, 0.2);
-    top: 10%;
+    top: 2%;
     left: 50%;
     margin-block-start: 1.3em;
     margin-block-end: 1.3em;
@@ -79,20 +77,30 @@ body {
     font-weight: bold;
     font-size: 1.8em;
     cursor: pointer; }
+    @media only screen and (max-width: 56.25em) {
+      .header__text-block {
+        max-width: 1400px;
+        margin: auto;
+        font-size: 1.5em; } }
+    @media only screen and (max-width: 75em) {
+      .header__text-block {
+        max-width: 1200px;
+        margin: auto;
+        padding: auto; } }
     @media only screen and (max-width: 47.5em) {
       .header__text-block {
-        background-color: rgba(209, 230, 233, 0.5);
-        padding: 1.8%;
-        width: auto;
+        padding: 1.5%;
+        width: 100%;
         margin: auto;
         border-style: none;
-        top: 18%;
+        top: 1%;
         left: 50%;
         display: block;
-        font-size: 1.1em;
+        font-size: .9em;
         text-align: center;
-        color: black;
-        font-weight: bold; } }
+        font-weight: bold;
+        outline: none;
+        background-color: transparent; } }
     .header__text-block__subtitle {
       display: block;
       font-size: 1.5em; }
@@ -130,6 +138,17 @@ body {
       max-width: 1200px;
       margin: 5%;
       padding: auto; } }
+  .container__paragraf__heading {
+    font-size: 1.5em;
+    font-weight: bold; }
+  .container__paragraf__date {
+    font-style: italic; }
+  .container__paragraf__content {
+    text-align: justify; }
+    @media only screen and (max-width: 47.5em) {
+      .container__paragraf__content {
+        line-height: 1.7;
+        margin: 1%; } }
   .container__column--left {
     -webkit-flex: 1;
     -ms-flex: 1;
@@ -137,7 +156,6 @@ body {
     flex: 20%;
     background-color: rgba(109, 109, 109, 0.2); }
   .container__column--left__media-img {
-    filter: grayscale(100%);
     cursor: pointer;
     margin: 0.4em;
     padding: 0.4em;
@@ -190,7 +208,7 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-color: rgba(109, 109, 109, 0.2); }
+    background-color: #d1e6e9; }
     @media only screen and (max-width: 47.5em) {
       .container__row--bottom {
         padding: auto;
@@ -204,11 +222,9 @@ body {
 .cont {
   display: flexbox;
   position: inline-block;
-  top: 87%;
-  left: 37%;
   list-style-type: none;
   font-family: "Montserrat", sans-serif;
-  white-space: nowrap;
+  white-space: inherit;
   text-align: center;
   overflow: hidden; }
   .cont__item {
@@ -228,10 +244,10 @@ body {
         text-align: center;
         background-color: #909090;
         font-size: 1em;
-        padding: auto;
         width: 100%;
         overflow: auto;
-        float: none; } }
+        float: none;
+        border: 0.1px solid #d1e6e9; } }
     .cont__item:hover {
       border: none;
       background: rgba(0, 0, 0, 0.2);
