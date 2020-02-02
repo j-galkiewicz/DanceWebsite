@@ -14,4 +14,4 @@ What I used to create it?
     -Read more button
 
 
-The minimalist desig was created by me.
+The minimalist design was created by me.
