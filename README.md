@@ -2,6 +2,9 @@
 
 ***Dance artist portfolio website***
 
+
+DIRECT LINK --> https://j-galkiewicz.github.io/DanceWebsite/
+
 This repository contains one-page responsive portfolio website.
 
 What I used to create it?
