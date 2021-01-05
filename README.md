@@ -1,13 +1,14 @@
 # DanceWebsite
 
-***Dance artist portfolio website***
 
 
 DIRECT LINK --> https://j-galkiewicz.github.io/DanceWebsite/
 
+## What?
+Dance artist portfolio website.
 This repository contains one-page responsive portfolio website.
 
-What I used to create it?
+## What I used to create it?
 
 -- HTML
 -- SASS
@@ -18,3 +19,6 @@ What I used to create it?
 
 
 The minimalist design was created by me.
+
+
+Enjoy!
