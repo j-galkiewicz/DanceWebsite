@@ -20,5 +20,7 @@ This repository contains one-page responsive portfolio website.
 
 The minimalist design was created by me.
 
+![Dance](https://user-images.githubusercontent.com/46644880/103643104-6711d080-4f54-11eb-880a-3ed928dcacb7.jpg)
+
 
 Enjoy!
